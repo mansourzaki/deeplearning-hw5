@@ -17,7 +17,7 @@ class Trainer:
                  optim=None,                   # Optimizer
                  train_dl=None,                # Training data set
                  val_test_dl=None,             # Validation (or test) data set
-                 cuda=False,                    # Whether to use the GPU
+                 cuda=True,                    # Whether to use the GPU
                  early_stopping_patience=-1):  # The patience for early stopping
         self._model = model
         self._crit = crit
